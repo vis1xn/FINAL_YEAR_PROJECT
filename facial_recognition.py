@@ -33,7 +33,7 @@ face_names = []
 frame_count = 0
 start_time = time.time()
 fps = 0
-authorized_names = ["Tyrese"]
+authorized_names = ["Tyrese, Fionnn, Nasir, Fergus"]
 servo_open = False
 servo_open_time = 0
 SERVO_CLOSE_DELAY = 15
@@ -106,7 +106,7 @@ while True:
    cv2.putText(display_frame, f"FPS: {current_fps:.1f}",
                (display_frame.shape[1] - 150, 30),
                cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-cv2.imshow('Video', display_frame)
+   cv2.imshow('Video', display_frame)
    if cv2.waitKey(1) == ord("q"):
        break
 cv2.destroyAllWindows()
